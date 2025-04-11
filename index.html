@@ -1,11 +1,1022 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivam Thorat</title>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/avatar-1.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="marqueeContainer">
+      <div class="textContainer">
+        <p>Your Information</p>
+      </div>
+      <marquee id="infoMarquee">Loading information...</marquee>
+    </div>
+
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <p class="contact-link" style="color: white">Hey are you safe ?</p>
+
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/profile.png"
+              alt="Sethu Satheesh"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Sethu Satheesh"><b>Shivam Thorat</b></h1>
+
+            <p class="title">Backend Developer</p>
+            <p class="title">Cyber Security Enthusiast</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:shivamthorat2103@gmail.com" class="contact-link"
+                  >shivamthorat2103@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Resume</p>
+
+                <a
+                  onclick="window.open('./assets/resume.pdf')"
+                  class="contact-link"
+                  >Resume</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Medium</p>
+
+                <a class="contact-link" href="https://medium.com/@shivammm21"
+                  >@shivammm21</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <a
+                  class="contact-link"
+                  href="https://maps.app.goo.gl/WMEqfrr5KHZuYpgV8"
+                  >Maharashtra, India</a
+                >
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/shivammm21" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/shivamthorat/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.instagram.com/shivammm.21/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Awards</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>Hey there,</p>
+            <p>
+              I'm a <b>backend developer</b> with a strong focus on creating efficient 
+              and secure systems. With experience in building scalable and 
+              high-performance backend solutions, I specialize in leveraging 
+              technologies like Spring Boot, Java, and Python to deliver robust 
+              applications. My passion for backend development is driven by a 
+              commitment to ensuring that systems run smoothly and securely, with 
+              an emphasis on optimizing performance and maintaining data integrity.
+            </p>
+
+            <p>
+              In addition to my backend expertise, I have a keen interest in 
+              cybersecurity. I strive to implement best practices for security at 
+              every layer of application development, from secure coding to 
+              encryption and vulnerability assessments. My goal is to stay at 
+              the forefront of evolving security threats and leverage cutting-edge 
+              tools to create safer and more resilient systems, protecting both users 
+              and data from potential risks.
+            </p>
+          </section>
+
+          <section class="badges-section" style="margin: 30px 0;">
+            <h3 class="h3 service-title" style="margin-bottom: 20px;">Achievements & Certifications</h3>
+            
+            <div class="badges-container" style="display: flex; gap: 20px; flex-wrap: wrap;">
+              <!-- TryHackMe Badge -->
+              <div style="flex: 1; min-width: 300px;">
+                <h4 class="h4" style="margin-bottom: 10px; color: var(--light-gray);">TryHackMe Profile</h4>
+                <div style="width: 100%; height: 100px; border-radius: 8px; overflow: hidden;">
+                  <iframe 
+                    src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4006641" 
+                    style="width: 100%; height: 100%; border: none;"
+                    loading="lazy">
+                  </iframe>
+                </div>
+              </div>
+
+              <!-- OWASP Badge -->
+              <div style="flex: 1; min-width: 300px;">
+                <h4 class="h4" style="margin-bottom: 10px; color: var(--light-gray);">OWASP Top 10</h4>
+                <div style="width: 100%; height: 150px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; background: var(--eerie-black-1); padding: 20px;">
+                  <div style="display: flex; align-items: center; gap: 20px;">
+                    <img src="./assets/images/owasp top 10.png" alt="OWASP Top 10" style="height: 80px; width: auto;">
+                    <div style="color: var(--light-gray);">
+                      <h5 class="h5" style="margin-bottom: 8px;">Understanding every OWASP vulnerability</h5>
+                      <p style="font-size: var(--fs-6);">OWASP Top 10 security risks</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Enhancing Cybersecurity Through Innovative Solutions
+                  </h4>
+
+                  <p class="service-item-text">
+                    Working on projects like scanning all apps to find bypass notifications 
+                    and secure QR code scanning to 
+                    detect malicious activity and improve digital safety for users.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Exploring Backend Development
+                  </h4>
+
+                  <p class="service-item-text">
+                    Leveraging expertise in Java Spring Boot and MySQL to create robust, scalable, and 
+                    efficient backend solutions for various applications.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Advancing Budget Management Solutions
+                  </h4>
+
+                  <p class="service-item-text">
+                    Developing a user-friendly budgeting app that helps individuals manage their finances, 
+                    split expenses with friends, and track spending habits efficiently.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Monitoring and Log Analysis
+                  </h4>
+
+                  <p class="service-item-text">
+                    I have a keen interest in log analysis and monitoring for
+                    detecting and hunting attack patterns and threats. I focus
+                    on preventing these threats through effective prevention
+                    mechanisms.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="testimonials">
+            <!-- <h3 class="h3 testimonials-title">Testimonials</h3> -->
+            <h3 class="h3 testimonials-title">Coming soon...</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Shivam Thorat
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>I will update soon...😉</p>
+                  </div>
+                </div>
+              </li>
+
+              
+
+              
+
+              
+            </ul>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              
+            </section>
+          </div>
+        </article>
+
+        <article class="resume" data-page="resume">
+          <header class="download-conntainer">
+            <h2 class="h2 article-title">Resume</h2>
+            <div class="download-icon">
+              <a onclick="window.open('./assets/resume.pdf')"><img src="./assets/images/download.svg" alt=""></a> 
+            </div>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Pune Vidyarthi Griha's College of Engineering Nashik (SPPU)
+                </h4>
+
+                <span>2023 — pursuing</span>
+
+                <p class="timeline-text">
+                  BE in Computer Engineering
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Loknete GopinathJi Munde Institute of Engineering College Nashik (MSBTE)
+                </h4>
+
+                <span>2019 — 2022</span>
+
+                <p class="timeline-text">
+                  Diploma in Computer Engineering
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Shri Chhatrapati Shivaji Maharaj Madhyamik Ani Uchhmadhyamik Vidyalay, Makhmalabad
+                </h4>
+
+                <span>2018 — 2019</span>
+
+                <p class="timeline-text">General education 10th grade</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Open Source Contributor @Hacktoctber
+                </h4>
+
+                <span>oct 2024 — oct 2024</span>
+
+                <p class="timeline-text">
+                  Collaborated with developers on open-source projects, 
+                  enhancing features, resolving issues, and ensuring 
+                  high-quality, maintainable 
+                  code through reviews and teamwork.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Web Content Writer @GeeksforGeeks
+                </h4>
+
+                <span>2022 — 2023</span>
+
+                <p class="timeline-text">
+                  Web Content Writer at GeeksforGeeks, sharing programming 
+                  knowledge through articles that simplify concepts and 
+                  provide practical 
+                  insights for developers at all levels.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JAVA Language</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java SpringBoot Framework</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Cyber Security</h5>
+                  <data value="60">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Linux</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Networking</h5>
+                  <data value="40">40%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Programming & Scripting</h5>
+                  <data value="30">30%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://github.com/shivammm21/pocketdoctor">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/pocket.png"
+                      alt="Budget Tracker App"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Pocket Doctor App</h3>
+
+                  <p class="project-category">
+                    Doctor appointments, emergency ambulance booking, 
+                    and medical history management for seniors
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://github.com/shivammm21/budget-app">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/budget_app.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Budget Tracker App</h3>
+
+                  <p class="project-category">Users to add expenses, track total spending, and view the 
+                    remaining balance from their monthly income.</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/shivammm21/Online-Attendance">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/online_attendance.png"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Online Attendance</h3>
+
+                  <p class="project-category">A secure OTP-based system with real-time tracking, 
+                    a mobile app, and PDF attendance reports, 
+                    streamlining attendance for teachers and students.</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="blog" data-page="awards">
+          <header>
+            <h2 class="h2 article-title">Honors and <br>Awards</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/awards7.jpeg"
+                      alt="Blueprint Competition"
+                      loading="lazy"
+                      onerror="this.src='./assets/images/fallback.png'"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <span class="dot"></span>
+                      <time datetime="2025-01-18">January 18, 2025</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Blueprint: Health, Education & Social Impact
+                    </h3>
+
+                    <p class="blog-text">
+                      Pitching at Blueprint: Health, Education & Social Impact – a flagship competition by eDc, 
+                      IIT-Delhi at NMIMS Mumbai. 
+                      Excited to showcase innovative solutions for a better tomorrow.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="#"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/awards6.jpeg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      
+
+                      <span class="dot"></span>
+
+                      <time datetime="2024-04-05">December 30, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Avishkaar Season 2 Finalists: Champions of Innovation in 48 Hours
+                    </h3>
+
+                    <p class="blog-text">
+                      The 48-hour Avishkaar Hackathon is a coding event where teams 
+                      build creative solutions to real-world problems, competing against time.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="#"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/awards5.jpeg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      
+
+                      <span class="dot"></span>
+
+                      <time datetime="2024-04-05">October 31, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Open Source Contributor @Hacktoberfest2k24
+                    </h3>
+
+                    <p class="blog-text">
+                      contributed by successfully merging 4+1 pull requests, diving into open-source, 
+                      and leveling up my skills in collaboration and code quality
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+
+              <li class="blog-post-item">
+                <a
+                  href="#"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/awards3.jpeg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      
+
+                      <span class="dot"></span>
+
+                      <time datetime="2024-04-05">April 05, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Project Competition (Equinox-2024)
+                    </h3>
+
+                    <p class="blog-text">
+                      K. K. Wagh College of Engineering, Nashik - 
+                      Achieved 3rd Prize for Online Attendance Project in Competition
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="#"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/awards2.png"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <span class="dot"></span>
+
+                      <time datetime="2024-02-28">Feb 28, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Project Competition (Gagnant-2024)
+                    </h3>
+
+                    <p class="blog-text">
+                      Pune Vidyarthi Griha's College of Engineering, Nashik - 
+                      Achieved 1st Prize for Online Attendance Project in Competition
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="#"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/awards4.jpeg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      
+
+                      <span class="dot"></span>
+
+                      <time datetime="2024-02-04">Fed 04, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Winjit Tech Fest 2k24 Hackathon
+                    </h3>
+
+                    <p class="blog-text">
+                      Secured 3rd place in the prestigious Winjit Tech Fest Hackathon! 🏆 Collaborating with four talented teammates, 
+                      we tackled complex challenges and developed innovative solutions that impressed the judges.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a
+                  href="#"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/awards1.jpeg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-25">Feb 25, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      International Conference (IC-RTETM-2022)
+                    </h3>
+
+                    <p class="blog-text">
+                      Guru Gobind Singh Polytechnic Nashik - Engaged in a collaborative paper 
+                      presentation on "Home Automation Chat Bot using IoT," contributing as one of four presenters.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              
+              
+            </ul>
+          </section>
+        </article>
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9329819.27269074!2d70.3967415326508!3d14.179078863221118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcfc41e9c9cd6f9%3A0x1b2f22924be04fb6!2sMaharashtra!5e1!3m2!1sen!2sin!4v1736184353308!5m2!1sen!2sin" 
+              width="600" 
+              height="400" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="javascript:void(0)" class="form" id="contactForm" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const name = formData.get('fullname');
+        const email = formData.get('email');
+        const message = formData.get('message');
+        
+        // Create the mailto URL
+        const mailtoUrl = `mailto:shivamthorat2103@gmail.com?subject=Contact Form Submission from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+        
+        // Open the user's default email client
+        window.location.href = mailtoUrl;
+        
+        // Clear the form
+        this.reset();
+    });
+    </script>
+  </body>
 </html>
