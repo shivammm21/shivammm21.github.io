@@ -93,14 +93,14 @@
 
             <li class="contact-item">
               <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
+                <ion-icon name="code-outline"></ion-icon>
               </div>
 
               <div class="contact-info">
-                <p class="contact-title">Medium</p>
+                <p class="contact-title">LeetCode</p>
 
-                <a class="contact-link" href="https://medium.com/@shivammm21"
-                  >@shivammm21</a
+                <a class="contact-link" href="https://leetcode.com/u/shivammm21/"
+                  >shivammm21</a
                 >
               </div>
             </li>
@@ -264,6 +264,20 @@
                     </div>
                   </div>
                 </a>
+              </div>
+
+              <!-- Oracle Cloud Infrastructure Badge -->
+              <div style="flex: 1; min-width: 300px;">
+                <h4 class="h4" style="margin-bottom: 10px; color: var(--light-gray);">Oracle Cloud Infrastructure</h4>
+                <div style="width: 100%; height: 110px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; background: var(--eerie-black-1); padding: 15px;">
+                  <div style="display: flex; align-items: center; gap: 20px;">
+                    <img src="./assets/images/Oracle Cloud Infrastructure.png" alt="Oracle Cloud Infrastructure" style="height: 70px; width: auto;">
+                    <div style="color: var(--light-gray);">
+                      <h5 class="h5" style="margin-bottom: 6px;">Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h5>
+                      <p style="font-size: var(--fs-6);">Issued by Oracle</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -642,6 +656,10 @@
               <li class="filter-item">
                 <button data-filter-btn>Web development</button>
               </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Tools</button>
+              </li>
             </ul>
 
             <div class="filter-select-box">
@@ -667,10 +685,43 @@
                 <li class="select-item">
                   <button data-select-item>Web development</button>
                 </li>
+
+                <li class="select-item">
+                  <button data-select-item>Tools</button>
+                </li>
               </ul>
             </div>
 
             <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="tools"
+              >
+                <a href="https://www.crowmancloud.com/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/crowman.png"
+                      alt="CrowmanCloud"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="project-content">
+                    <h3 class="project-title">CrowmanCloud</h3>
+
+                    <p class="project-category">
+                      CrowmanCloud helps developers prepare for deployment by analyzing code, 
+                      automating infrastructure, suggesting the best cloud options, and estimating costs—all in a secure desktop app.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
               <li
                 class="project-item active"
                 data-filter-item
@@ -689,12 +740,14 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Pocket Doctor App</h3>
+                  <div class="project-content">
+                    <h3 class="project-title">Pocket Doctor App</h3>
 
-                  <p class="project-category">
-                    Doctor appointments, emergency ambulance booking, 
-                    and medical history management for seniors
-                  </p>
+                    <p class="project-category">
+                      Doctor appointments, emergency ambulance booking, 
+                      and medical history management for seniors
+                    </p>
+                  </div>
                 </a>
               </li>
 
@@ -716,10 +769,12 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Budget Tracker App</h3>
+                  <div class="project-content">
+                    <h3 class="project-title">Budget Tracker App</h3>
 
-                  <p class="project-category">Users to add expenses, track total spending, and view the 
-                    remaining balance from their monthly income.</p>
+                    <p class="project-category">Users to add expenses, track total spending, and view the 
+                      remaining balance from their monthly income.</p>
+                  </div>
                 </a>
               </li>
 
@@ -741,11 +796,13 @@
                     />
                   </figure>
 
-                  <h3 class="project-title">Online Attendance</h3>
+                  <div class="project-content">
+                    <h3 class="project-title">Online Attendance</h3>
 
-                  <p class="project-category">A secure OTP-based system with real-time tracking, 
-                    a mobile app, and PDF attendance reports, 
-                    streamlining attendance for teachers and students.</p>
+                    <p class="project-category">A secure OTP-based system with real-time tracking, 
+                      a mobile app, and PDF attendance reports, 
+                      streamlining attendance for teachers and students.</p>
+                  </div>
                 </a>
               </li>
             </ul>
