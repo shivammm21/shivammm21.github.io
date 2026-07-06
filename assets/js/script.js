@@ -148,32 +148,49 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-// Function to fetch user IP and update marquee
-function fetchUserInfo() {
-  fetch('https://ipinfo.io/json')
-    .then(response => response.json())
-    .then(data => {
-      const ip = data.ip || 'Not available';
-      const city = data.city || 'Not available';
-      const region = data.region || 'Not available';
-      const country = data.country || 'Not available';
-      const location = `${city}, ${region}, ${country}`;
-      const org = data.org || 'Not available'; // ISP information
-      const postal = data.postal || 'Not available';
-      const timezone = data.timezone || 'Not available';
 
-      // Browser and system information (not available from IP API, requires user-agent parsing)
-      const browserInfo = navigator.userAgent;
-      const systemInfo = navigator.platform;
+// blog details variables
+const blogItems = document.querySelectorAll("[data-blog-item]");
+const blogDetailsPage = document.querySelector("[data-page='blog-details']");
+const blogPage = document.querySelector("[data-page='blog']");
+const blogBackBtn = document.querySelector("[data-blog-back-btn]");
 
-      // Display IP and additional information
-      document.getElementById('infoMarquee').textContent = `IP Address: ${ip} | Location: ${location} | ISP: ${org} | Postal Code: ${postal} | timezone: ${timezone}  |Browser: ${browserInfo} | System: ${systemInfo}`;
-    })
-    .catch(error => {
-      console.error('Error fetching user information:', error);
-      document.getElementById('infoMarquee').textContent = 'Failed to load information.';
-    });
+// blog details elements to populate
+const blogDetailsImg = document.querySelector("[data-blog-details-img]");
+const blogDetailsTitle = document.querySelector("[data-blog-details-title]");
+const blogDetailsText = document.querySelector("[data-blog-details-text]");
+const blogDetailsMeta = document.querySelector("[data-blog-details-meta]");
+
+// add click event to all blog items
+for (let i = 0; i < blogItems.length; i++) {
+  blogItems[i].addEventListener("click", function () {
+    blogDetailsImg.src = this.querySelector("[data-blog-img]").src;
+    blogDetailsImg.alt = this.querySelector("[data-blog-img]").alt;
+    blogDetailsTitle.innerHTML = this.querySelector("[data-blog-title]").innerHTML;
+    blogDetailsText.innerHTML = this.querySelector("[data-blog-text]").outerHTML;
+    blogDetailsMeta.innerHTML = this.querySelector("[data-blog-meta]").innerHTML;
+
+    // Hide all pages
+    for (let j = 0; j < pages.length; j++) {
+      pages[j].classList.remove("active");
+    }
+    
+    // Show blog details page
+    blogDetailsPage.classList.add("active");
+    window.scrollTo(0, 0);
+  });
 }
 
-// Fetch user information on page load
-document.addEventListener('DOMContentLoaded', fetchUserInfo);
+// add click event to back button
+if(blogBackBtn) {
+  blogBackBtn.addEventListener("click", function () {
+    // Hide all pages
+    for (let j = 0; j < pages.length; j++) {
+      pages[j].classList.remove("active");
+    }
+    
+    // Show blog page
+    blogPage.classList.add("active");
+    window.scrollTo(0, 0);
+  });
+}

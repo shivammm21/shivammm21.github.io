@@ -1,0 +1,41 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Glow background circle -->
+  <circle cx="20" cy="20" r="18" opacity="0.12" fill="url(#ai_grad_bg)"/>
+
+  <!-- Brain outline left hemisphere -->
+  <path d="M20 10 C14 10 10 14 10 19 C10 22 11.5 24.5 14 26 L14 30 L18 30 L18 26.5 C19 26.8 20 27 20 27"
+    stroke="url(#ai_grad)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Brain outline right hemisphere -->
+  <path d="M20 10 C26 10 30 14 30 19 C30 22 28.5 24.5 26 26 L26 30 L22 30 L22 26.5 C21 26.8 20 27 20 27"
+    stroke="url(#ai_grad)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Center divider -->
+  <line x1="20" y1="10" x2="20" y2="27" stroke="url(#ai_grad)" stroke-width="1.2" stroke-dasharray="2 2" opacity="0.7"/>
+
+  <!-- Neural sparkle dots -->
+  <circle cx="15" cy="17" r="1.2" fill="url(#ai_grad)" opacity="0.9"/>
+  <circle cx="15" cy="22" r="1.2" fill="url(#ai_grad)" opacity="0.9"/>
+  <circle cx="25" cy="17" r="1.2" fill="url(#ai_grad)" opacity="0.9"/>
+  <circle cx="25" cy="22" r="1.2" fill="url(#ai_grad)" opacity="0.9"/>
+
+  <!-- Sparkle star top-right -->
+  <path d="M32 8 L32.8 10.5 L35.5 10.5 L33.4 12.1 L34.2 14.6 L32 13 L29.8 14.6 L30.6 12.1 L28.5 10.5 L31.2 10.5 Z"
+    fill="url(#ai_grad)" opacity="0.85"/>
+
+  <!-- Small sparkle dot bottom-left -->
+  <circle cx="8" cy="30" r="1.5" fill="url(#ai_grad)" opacity="0.6"/>
+  <circle cx="8" cy="30" r="0.7" fill="url(#ai_grad)" opacity="1"/>
+
+  <defs>
+    <linearGradient id="ai_grad_bg" x1="2" y1="2" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFDB6E"/>
+      <stop offset="1" stop-color="#FFBC5E"/>
+    </linearGradient>
+    <linearGradient id="ai_grad" x1="2" y1="2" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0.26" stop-color="#FFDB6E"/>
+      <stop offset="1" stop-color="#FFBC5E"/>
+    </linearGradient>
+  </defs>
+</svg>
