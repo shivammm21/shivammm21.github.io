@@ -39,6 +39,7 @@ Notable-Projects:
 - Online Attendance: https://github.com/shivammm21/Online-Attendance
 
 Certifications-And-Profiles:
+- Google Cloud Cybersecurity Certificate (Credly)
 - GitHub Foundations (Credly)
 - Postman Student Expert (Badgr)
 - Oracle Cloud Infrastructure Foundations
